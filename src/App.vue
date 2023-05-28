@@ -1,5 +1,14 @@
-<script lang="ts"></script>
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'AppRoot',
+  setup() {
+    return {};
+  },
+});
+</script>
 
 <template>
-  <div>Hi</div>
+  <div class="text-[red]">New user</div>
 </template>

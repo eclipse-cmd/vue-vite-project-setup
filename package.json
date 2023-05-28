@@ -6,17 +6,18 @@
   "scripts": {
     "dev": "vite --host --port 8082",
     "build": "vue-tsc && vite build",
-    "start": "vite preview --host --port 8082"
+    "start": "vite preview --host --port 8082",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@esbuild/darwin-arm64": "^0.17.19",
     "axios": "^1.4.0",
     "eslint": "^8.41.0",
     "eslint-plugin-cypress": "^2.13.3",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.14.1",
     "lodash": "^4.17.21",
-    "prettier": "^2.8.8",
     "vite-plugin-html-env": "^1.2.8",
     "vue": "^3.3.4",
     "vue-axios": "^3.5.2",
@@ -34,10 +35,14 @@
     "@vue/eslint-config-prettier": "^7.1.0",
     "@vue/eslint-config-typescript": "^11.0.3",
     "autoprefixer": "^10.4.14",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4",
     "vite": "^4.3.9",
-    "vue-tsc": "^1.6.5"
+    "vue-tsc": "^1.6.5",
+    "husky": "^8.0.0"
   }
 }

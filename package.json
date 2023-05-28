@@ -7,7 +7,7 @@
     "dev": "vite --host --port 8082",
     "build": "vue-tsc && vite build",
     "start": "vite preview --host --port 8082",
-    "lint": "eslint src --ext .js",
+    "lint": "eslint 'src/**/*.{js,vue,ts}'",
     "lint:fix": "eslint src --ext .ts --fix",
     "prepare": "husky install"
   },

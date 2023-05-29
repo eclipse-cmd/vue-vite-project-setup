@@ -10,5 +10,5 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="text-[red]">New user</div>
+  <div class="text-[red]">App root</div>
 </template>
